@@ -1,30 +1,77 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      opacity: 0.9;
+  }
 
-}
-/*Section1 NC*/
-#navigation{
+  button:hover {
+      opacity: 1;
+  }
 
-}
-/*Section2 NC*/
-#welcome{
+  .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+  }
 
-}
-/*Section3 DJ*/
-#services{
+  .cancelbtn,
+  .signupbtn {
+      float: left;
+      width: 260px;
+  }
 
-}
-/*Section4 NC*/
-#about{
+  .container {
+      padding: 16px;
+  }
 
-}
-/*Section5 DJ*/
-#feed_back{
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding-top: 50px;
+  }
 
-}
-/*Section6 NC*/
-#contact_us{
+  .modal-content {
+      background-color: #1f4552;
+      margin: 5% auto 15% auto;
+      border: 1px solid #888;
+      width: 80%;
+  }
 
-}
+  .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: #f44336;
+      cursor: pointer;
+  }
+
+  .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  @media screen and (max-width: 300px) {
+
+      .cancelbtn,
+      .signupbtn {
+          width: 100%;
+      }
+  }
