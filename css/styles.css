@@ -29,23 +29,6 @@
 
 #feed_back {}
 
-#feedback button {
-    height: 45px;
-    width: 600px;
-    font-size: 20px;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.5s;
-    margin-left: 25%;
-    margin-top: 5px;
-}
-
-#feedback button:hover {
-    background: #115511;
-}
-
 
 /*Section6 NC*/
 
