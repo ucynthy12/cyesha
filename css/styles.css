@@ -1,5 +1,5 @@
   button {
-      background-color: #4CAF50;
+      background-color:#47d147;
       color: white;
       padding: 14px 20px;
       margin: 8px 0;
@@ -41,10 +41,11 @@
   }
 
   .modal-content {
-      background-color: #1f4552;
+      background-color: #ffffff;
       margin: 5% auto 15% auto;
       border: 1px solid #888;
       width: 80%;
+      color:#000000;
   }
 
   .close {
@@ -74,4 +75,7 @@
       .signupbtn {
           width: 100%;
       }
+  }
+  .card{
+      margin: 0px 20px 0px 20px;
   }
