@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/160b0d3734.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/logoc.png">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,8 +24,7 @@
     <section id="navigation">
         <div class="container-fluid">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light ">
-
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                     <a class="navbar-brand"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,22 +33,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav " id="phone">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="far fa-clock"></i>08:00 am - 06:00 pm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class='fas fa-phone-volume'></i>+250788321322</a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class='fas fa-envelope'></i>cyesha2019@gmail.com</a>
-
-                            </li>
-                        </ul>
-                        <hr>
-
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ">
 
                             <li class="nav-item ">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -69,6 +53,22 @@
                             </li>
                         </ul>
 
+                        <ul class="navbar-nav ml-auto" id="phone">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="far fa-clock"></i>08:00 am - 06:00 pm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class='fas fa-phone-volume'></i>+250788321322</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class='fas fa-envelope'></i>cyesha2019@gmail.com</a>
+
+                            </li>
+                        </ul>
+                        <hr>
+
+
                     </div>
 
                 </nav>
@@ -79,18 +79,7 @@
 
 
     </section>
-    <!--End of Section 1-->
-    <!--Search bar-->
-    <!-- <section class="search-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                   
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--Section 2-->
+
     <section id="welcome">
         <div class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -101,8 +90,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100"
-                            src="https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        <img class="d-block w-100" src="https://c.stocksy.com/a/xNE900/z9/2200253.jpg"
                             alt="First slide">
                         <div class="carousel-caption " id="carousel1">
                             <img class="animate__animated animate__fadeIn animate__delay-1s" src="images/logo.png"
@@ -114,7 +102,9 @@
                             <a href="#" class="animate__animated animate__fadeIn animate__delay-4s"><button>Service
                                     Costs</button></a>
                         </div>
+                        <div class="overlay"></div>
                     </div>
+
                     <div class="carousel-item">
                         <img class="d-block w-100"
                             src="https://res.cloudinary.com/ucynthy12/image/upload/v1602607895/Gardeningblackhands_jcbjot.jpg"
@@ -129,6 +119,7 @@
                             <a href="#" class="animate__animated animate__fadeIn animate__delay-4s"><button>Service
                                     Costs</button></a>
                         </div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
@@ -144,7 +135,7 @@
                             <a href="#" class="animate__animated animate__fadeIn animate__delay-4s "><button>Service
                                     Costs</button></a>
                         </div>
-
+                        <div class="overlay"></div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -161,425 +152,458 @@
     <!--End of Section 2-->
     <!--Section 3-->
     <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p>What makes CYESHA trusted above other cleaning service providers? When you combine higher standards,
+
+        <div class="container-fluid">
+            <h3>Our Services
+                <hr class="line-s">
+
+            </h3>
+            <p class="lead">What makes CYESHA trusted above other cleaning service providers? When you combine higher
+                standards,
                 smarter strategies and superior quality all in one package, the result is top notch.</p>
-            <div class="row">
-                <!-- <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div> -->
+        </div>
 
-                <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/car-wash.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Car Washing</h5>
-                            <p class="card-text">You want your car to be squeaky clean!! we deliver Car cleaning
-                                services that give you a 100% results; including interior Car wash and Exterior Car
-                                wash.
-                            </p>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators" id='card-indicators'>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/car-wash.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Car Washing</h5>
+                                    <p class="card-text">You want your car to be squeaky clean!! we deliver Car cleaning
+                                        services that give you a 100% results; including interior Car wash and Exterior
+                                        Car
+                                        wash.
+                                    </p>
+                                    <button onclick="document.getElementById('carWash').style.display='block'"
+                                        style="width:auto;">Order CarWash services</button>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <button onclick="document.getElementById('carWash').style.display='block'"
-                                style="width:auto;">Order CarWash services</button>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/garden_maintain1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Garden Maintainance</h5>
+                                    <p class="card-text">A beautiful Home looks best with a beautiful Garden; that is
+                                        why one of
+                                        the services we offer include Garden Maintainance where we trim your garden for
+                                        a better
+                                        look
+                                    </p>
+                                    <button onclick="document.getElementById('gardenMntn').style.display='block'"
+                                        style="width:auto;">Order CarWash services</button>
+                                </div>
+
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/housecl.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">House Cleaning</h5>
+                                    <p class="card-text">We provide profesional cleaning services designed to keep your
+                                        home
+                                        sparkling and beautiful so that you can focus on things that matter more to you.
+                                    </p>
+                                    <button onclick="document.getElementById('houseCleaning').style.display='block'"
+                                        style="width:auto;">House Cleaning services</button>
+                                </div>
 
-                <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/garden_maintain1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Garden Maintainance</h5>
-                            <p class="card-text">A beautiful Home looks best with a beautiful Garden; that is why one of
-                                the services we offer include Garden Maintainance where we trim your garden for a better
-                                look
-                            </p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <button onclick="document.getElementById('gardenMntn').style.display='block'"
-                                style="width:auto;">Order CarWash services</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
+                        <div class="col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="images/Office-Cleaning.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Office Cleaning</h5>
+                                    <p class="card-text">You want your office to be impeccable! Cyesha delivers service
+                                        where we
+                                        make your office as clean as new. Reach to us
+                                    </p>
+                                    <button onclick="document.getElementById('officeCleaning').style.display='block'"
+                                        style="width:auto;">Office cleaning
+                                        service</button>
 
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/housecl.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">House Cleaning</h5>
-                            <p class="card-text">We provide profesional cleaning services designed to keep your home
-                                sparkling and beautiful so that you can focus on things that matter more to you.
-                            </p>
-                        </div>
-                        <div class="card-body">
-                            <button onclick="document.getElementById('houseCleaning').style.display='block'"
-                                style="width:auto;">House Cleaning services</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/Office-Cleaning.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Office Cleaning</h5>
-                            <p class="card-text">You want your office to be impeccable! Cyesha delivers service where we
-                                make your office as clean as new. Reach to us
-                            </p>
-                            <div class="card-body">
-                                <button onclick="document.getElementById('officeCleaning').style.display='block'"
-                                    style="width:auto;">Office cleaning
-                                    service</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="carWash" class="modal">
-                <span onclick="document.getElementById('carWash').style.display='none'" class="close"
-                    title="Close">&times;</span>
-                <form class="modal-content">
-                    <div class="container">
-                        <h2>Car Wash request Field</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fullname">Full Names</label>
-                                    <input type="text" class="form-control" id="fullname"
-                                        placeholder="Enter your full name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Car modal">Choose your Car modal</label>
-                                    <select class="form-control" id="car-modal">
-                                        <option value="clear" disabled selected hidden>
-                                            -select car
-                                            modal-</option>
-                                        <option>Ford</option>
-                                        <option>Ferrari</option>
-                                        <option>Hyndai</option>
-                                        <option>Jeep</option>
-                                        <option>Lamborghini</option>
-                                        <option>BMW</option>
-                                        <option>Hyundai</option>
-                                    </select>
-                                </div>
+        </div>
 
-                                <div class="form-group">
-                                    <label for="cleaning-frequency">Cleaning
-                                        Frequency</label>
-                                    <select class="form-control" id="cleaning-frequency">
-                                        <option value="clear" disabled selected hidden>
-                                            -select
-                                            cleaning
-                                            frequency-
-                                        </option>
-                                        <option>Weekly Service</option>
-                                        <option>Bi-Weekly Service</option>
-                                        <option>Tri-Weekly Service</option>
-                                        <option>Monthly Service</option>
-                                    </select>
-                                </div>
+
+
+
+
+
+
+        <div id="carWash" class="modal">
+            <span onclick="document.getElementById('carWash').style.display='none'" class="close"
+                title="Close">&times;</span>
+            <form class="modal-content">
+                <div class="container">
+                    <h2>Car Wash request Field</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fullname">Full Names</label>
+                                <input type="text" class="form-control" id="fullname"
+                                    placeholder="Enter your full name">
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="location">Location</label>
-                                    <select class="form-control" id="location">
-                                        <option value="clear" disabled selected hidden>
-                                            -select
-                                            Your
-                                            Location-
-                                        </option>
-                                        <option>Kigali City</option>
-                                        <option>Eastern Province</option>
-                                        <option>Western Province</option>
-                                        <option>Northern Province</option>
-                                        <option>Southern Province</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ph">Phone Number</label>
-                                    <input type="number" class="form-control" id="car-phonenumber"
-                                        placeholder="Enter your Phone Number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="car-email"
-                                        placeholder="Enter your email address">
-                                </div>
+                            <div class="form-group">
+                                <label for="Car modal">Choose your Car modal</label>
+                                <select class="form-control" id="car-modal">
+                                    <option value="clear" disabled selected hidden>
+                                        -select car
+                                        modal-</option>
+                                    <option>Ford</option>
+                                    <option>Ferrari</option>
+                                    <option>Hyndai</option>
+                                    <option>Jeep</option>
+                                    <option>Lamborghini</option>
+                                    <option>BMW</option>
+                                    <option>Hyundai</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cleaning-frequency">Cleaning
+                                    Frequency</label>
+                                <select class="form-control" id="cleaning-frequency">
+                                    <option value="clear" disabled selected hidden>
+                                        -select
+                                        cleaning
+                                        frequency-
+                                    </option>
+                                    <option>Weekly Service</option>
+                                    <option>Bi-Weekly Service</option>
+                                    <option>Tri-Weekly Service</option>
+                                    <option>Monthly Service</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('carWash').style.display='none'"
-                                class="cancelbtn">Cancel</button>
-                            <button type="submit" class="signupbtn">Sign Up</button>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <select class="form-control" id="location">
+                                    <option value="clear" disabled selected hidden>
+                                        -select
+                                        Your
+                                        Location-
+                                    </option>
+                                    <option>Kigali City</option>
+                                    <option>Eastern Province</option>
+                                    <option>Western Province</option>
+                                    <option>Northern Province</option>
+                                    <option>Southern Province</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ph">Phone Number</label>
+                                <input type="number" class="form-control" id="car-phonenumber"
+                                    placeholder="Enter your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="car-email"
+                                    placeholder="Enter your email address">
+                            </div>
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('carWash').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-            <div id="houseCleaning" class="modal">
-                <span onclick="document.getElementById('houseCleaning').style.display='none'" class="close"
-                    title="Close">&times;</span>
-                <form class="modal-content">
-                    <div class="container">
-                        <h2>House Cleaning Form</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fullname">Full Names</label>
-                                    <input type="text" class="form-control" id="full-name-house"
-                                        placeholder="Enter your full name">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="house-cleaning">Rooms you would like us to
-                                        clean</label>
-                                    <select class="form-control" id="rooms">
-                                        <option value="clear" disabled selected hidden>
-                                            -select rooms-
-                                        </option>
-                                        <option>Whole house</option>
-                                        <option>Dining room</option>
-                                        <option>Gym</option>
-                                        <option>Garage</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cleaning-frequency">Cleaning
-                                        Frequency</label>
-                                    <select class="form-control" id="house-cleaning-frequency">
-                                        <option value="clear" disabled selected hidden>
-                                            -select cleaning
-                                            frequency-
-                                        </option>
-                                        <option>Weekly Service</option>
-                                        <option>Bi-Weekly Service</option>
-                                        <option>Tri-Weekly Service</option>
-                                        <option>Monthly Service</option>
-                                    </select>
-                                </div>
+        <div id="houseCleaning" class="modal">
+            <span onclick="document.getElementById('houseCleaning').style.display='none'" class="close"
+                title="Close">&times;</span>
+            <form class="modal-content">
+                <div class="container">
+                    <h2>House Cleaning Form</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fullname">Full Names</label>
+                                <input type="text" class="form-control" id="full-name-house"
+                                    placeholder="Enter your full name">
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="location">Location</label>
-                                    <select class="form-control" id="house-clean-location">
-                                        <option value="clear" disabled selected hidden>
-                                            -select Your
-                                            Location-
-                                        </option>
-                                        <option>Kigali City</option>
-                                        <option>Eastern Province</option>
-                                        <option>Western Province</option>
-                                        <option>Northern Province</option>
-                                        <option>Southern Province</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ph">Phone Number</label>
-                                    <input type="number" class="form-control" id="house-phonenumber"
-                                        placeholder="Enter your Phone Number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="house-email"
-                                        placeholder="Enter your email address">
-                                </div>
+
+                            <div class="form-group">
+                                <label for="house-cleaning">Rooms you would like us to
+                                    clean</label>
+                                <select class="form-control" id="rooms">
+                                    <option value="clear" disabled selected hidden>
+                                        -select rooms-
+                                    </option>
+                                    <option>Whole house</option>
+                                    <option>Dining room</option>
+                                    <option>Gym</option>
+                                    <option>Garage</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cleaning-frequency">Cleaning
+                                    Frequency</label>
+                                <select class="form-control" id="house-cleaning-frequency">
+                                    <option value="clear" disabled selected hidden>
+                                        -select cleaning
+                                        frequency-
+                                    </option>
+                                    <option>Weekly Service</option>
+                                    <option>Bi-Weekly Service</option>
+                                    <option>Tri-Weekly Service</option>
+                                    <option>Monthly Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <select class="form-control" id="house-clean-location">
+                                    <option value="clear" disabled selected hidden>
+                                        -select Your
+                                        Location-
+                                    </option>
+                                    <option>Kigali City</option>
+                                    <option>Eastern Province</option>
+                                    <option>Western Province</option>
+                                    <option>Northern Province</option>
+                                    <option>Southern Province</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ph">Phone Number</label>
+                                <input type="number" class="form-control" id="house-phonenumber"
+                                    placeholder="Enter your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="house-email"
+                                    placeholder="Enter your email address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('houseCleaning').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="gardenMntn" class="modal">
+            <span onclick="document.getElementById('gardenMntn').style.display='none'" class="close"
+                title="Close">&times;</span>
+            <form class="modal-content">
+                <div class="container">
+                    <h2>Garden Maintainance Form</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fullname">Full Names</label>
+                                <input type="text" class="form-control" id="full-name-garden"
+                                    placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="garden-cleaning">Type of Garden</label>
+                                <select class="form-control" id="type-garden">
+                                    <option value="clear" disabled selected hidden>
+                                        -select Garden
+                                        Type-</option>
+                                    <option>Butterfly Garden</option>
+                                    <option>Water Garden</option>
+                                    <option>Demonstration Garden</option>
+                                    <option>Organic Gardening</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cleaning-frequency">Cleaning
+                                    Frequency</label>
+                                <select class="form-control" id="garden-cleaning-frequency">
+                                    <option value="clear" disabled selected hidden>
+                                        -select cleaning
+                                        frequency-
+                                    </option>
+                                    <option>Weekly Service</option>
+                                    <option>Bi-Weekly Service</option>
+                                    <option>Tri-Weekly Service</option>
+                                    <option>Monthly Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <select class="form-control" id="garden-clean-location">
+                                    <option value="clear" disabled selected hidden>
+                                        -select Your
+                                        Location-
+                                    </option>
+                                    <option>Kigali City</option>
+                                    <option>Eastern Province</option>
+                                    <option>Western Province</option>
+                                    <option>Northern Province</option>
+                                    <option>Southern Province</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ph">Phone Number</label>
+                                <input type="number" class="form-control" id="garden-phonenumber"
+                                    placeholder="Enter your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="garden-email"
+                                    placeholder="Enter your email address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('gardenMntn').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="officeCleaning" class="modal">
+            <span onclick="document.getElementById('officeCleaning').style.display='none'" class="close"
+                title="Close">&times;</span>
+            <form class="modal-content">
+                <div class="container">
+                    <h2>Office services Form</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fullname">Full Names</label>
+                                <input type="text" class="form-control" id="full-name-office"
+                                    placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="office-cleaning">Office cleaning</label>
+                                <select class="form-control" id="size-office">
+                                    <option value="clear" disabled selected hidden>
+                                        -select Office
+                                        size-</option>
+                                    <option>CEO/Director's Office</option>
+                                    <option value="">Partner's Office</option>
+                                    <option>Standard Office</option>
+                                    <option>Small Office</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cleaning-frequency">Cleaning
+                                    Frequency</label>
+                                <select class="form-control" id="office-cleaning-frequency">
+                                    <option value="clear" disabled selected hidden>
+                                        -select cleaning
+                                        frequency-
+                                    </option>
+                                    <option>Weekly Service</option>
+                                    <option>Bi-Weekly Service</option>
+                                    <option>Tri-Weekly Service</option>
+                                    <option>Monthly Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <select class="form-control" id="office-clean-location">
+                                    <option value="clear" disabled selected hidden>
+                                        -select Your
+                                        Location-
+                                    </option>
+                                    <option>Kigali City</option>
+                                    <option>Eastern Province</option>
+                                    <option>Western Province</option>
+                                    <option>Northern Province</option>
+                                    <option>Southern Province</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ph">Phone Number</label>
+                                <input type="number" class="form-control" id="office-phonenumber"
+                                    placeholder="Enter your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="office-email"
+                                    placeholder="Enter your email address">
                             </div>
                         </div>
                         <div class="clearfix">
                             <button type="button"
-                                onclick="document.getElementById('houseCleaning').style.display='none'"
+                                onclick="document.getElementById('officeCleaning').style.display='none'"
                                 class="cancelbtn">Cancel</button>
                             <button type="submit" class="signupbtn">Sign Up</button>
                         </div>
                     </div>
-                </form>
-            </div>
-
-            <div id="gardenMntn" class="modal">
-                <span onclick="document.getElementById('gardenMntn').style.display='none'" class="close"
-                    title="Close">&times;</span>
-                <form class="modal-content">
-                    <div class="container">
-                        <h2>Garden Maintainance Form</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fullname">Full Names</label>
-                                    <input type="text" class="form-control" id="full-name-garden"
-                                        placeholder="Enter your full name">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="garden-cleaning">Type of Garden</label>
-                                    <select class="form-control" id="type-garden">
-                                        <option value="clear" disabled selected hidden>
-                                            -select Garden
-                                            Type-</option>
-                                        <option>Butterfly Garden</option>
-                                        <option>Water Garden</option>
-                                        <option>Demonstration Garden</option>
-                                        <option>Organic Gardening</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cleaning-frequency">Cleaning
-                                        Frequency</label>
-                                    <select class="form-control" id="garden-cleaning-frequency">
-                                        <option value="clear" disabled selected hidden>
-                                            -select cleaning
-                                            frequency-
-                                        </option>
-                                        <option>Weekly Service</option>
-                                        <option>Bi-Weekly Service</option>
-                                        <option>Tri-Weekly Service</option>
-                                        <option>Monthly Service</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="location">Location</label>
-                                    <select class="form-control" id="garden-clean-location">
-                                        <option value="clear" disabled selected hidden>
-                                            -select Your
-                                            Location-
-                                        </option>
-                                        <option>Kigali City</option>
-                                        <option>Eastern Province</option>
-                                        <option>Western Province</option>
-                                        <option>Northern Province</option>
-                                        <option>Southern Province</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ph">Phone Number</label>
-                                    <input type="number" class="form-control" id="garden-phonenumber"
-                                        placeholder="Enter your Phone Number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="garden-email"
-                                        placeholder="Enter your email address">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('gardenMntn').style.display='none'"
-                                class="cancelbtn">Cancel</button>
-                            <button type="submit" class="signupbtn">Sign Up</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div id="officeCleaning" class="modal">
-                <span onclick="document.getElementById('officeCleaning').style.display='none'" class="close"
-                    title="Close">&times;</span>
-                <form class="modal-content">
-                    <div class="container">
-                        <h2>Office services Form</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fullname">Full Names</label>
-                                    <input type="text" class="form-control" id="full-name-office"
-                                        placeholder="Enter your full name">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="office-cleaning">Office cleaning</label>
-                                    <select class="form-control" id="size-office">
-                                        <option value="clear" disabled selected hidden>
-                                            -select Office
-                                            size-</option>
-                                        <option>CEO/Director's Office</option>
-                                        <option value="">Partner's Office</option>
-                                        <option>Standard Office</option>
-                                        <option>Small Office</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cleaning-frequency">Cleaning
-                                        Frequency</label>
-                                    <select class="form-control" id="office-cleaning-frequency">
-                                        <option value="clear" disabled selected hidden>
-                                            -select cleaning
-                                            frequency-
-                                        </option>
-                                        <option>Weekly Service</option>
-                                        <option>Bi-Weekly Service</option>
-                                        <option>Tri-Weekly Service</option>
-                                        <option>Monthly Service</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="location">Location</label>
-                                    <select class="form-control" id="office-clean-location">
-                                        <option value="clear" disabled selected hidden>
-                                            -select Your
-                                            Location-
-                                        </option>
-                                        <option>Kigali City</option>
-                                        <option>Eastern Province</option>
-                                        <option>Western Province</option>
-                                        <option>Northern Province</option>
-                                        <option>Southern Province</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ph">Phone Number</label>
-                                    <input type="number" class="form-control" id="office-phonenumber"
-                                        placeholder="Enter your Phone Number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="office-email"
-                                        placeholder="Enter your email address">
-                                </div>
-                            </div>
-                            <div class="clearfix">
-                                <button type="button"
-                                    onclick="document.getElementById('officeCleaning').style.display='none'"
-                                    class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
+        </div>
         </div>
     </section>
     <!--End of Section 3-->
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br>
     <!--Section 4-->
     <section id="about">
-        <div class="container">
-            <div>
-                <!--Photos-->
-                <img src="./images/aboutOur.jpg" alt="carpetCleaning" id="img">
-                <img src="./images/aboutOur2.jpeg" alt="" id="img">
-            </div>
-    
-            <div>
-                <h1 id="H1">ABOUT OUR COMPANY</h1><br>
-                <p id="H2">Exceptional level of cleaning services.</p><br>
-                <p>Cyeshaa cleaning company was established in 2018 and quickly build a reputation as one of the leading providers of residential and commercial cleaning solution.We offer a wider variety of services including Professional carpet cleanings,car
-                    wash.<br> Our focus is to listen to our clients, understand their needs and provide the exceptional level of residential and commercial cleaning service.</p>
-                <a href="#"><button>Learn More</button></a>
+        <div class="container-fluid">
+            <h3 >ABOUT OUR COMPANY
+                <hr class="line-d">
+            </h3>
+          
+            <div class="row">
+                <div class="col-4" class="floor-img">
+                 <img src="/images/floor-cleaning2.png" alt="">
+                </div>
+                <div class="col-8" id="description">
+                    
+                    <p id="H2">Exceptional level of cleaning services.</p><br>
+                    <p id='H3'>Cyeshaa cleaning company was established in 2018 and quickly build a reputation as one of the leading
+                        providers of residential and commercial cleaning solution.We offer a wider variety of services
+                        including Professional carpet cleanings,car
+                        wash.<br> Our focus is to listen to our clients, understand their needs and provide the exceptional
+                        level of residential and commercial cleaning service.</p>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+
+          
+                
             </div>
         </div>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+
     <!--End of Section 4-->
     <!--Section 5-->
     <section id="feed_back">
