@@ -6,33 +6,55 @@ function CyeshaInfo(fullname, frequency, location, email, phonenumber) {
     this.phonenumber = phonenumber;
     this.email = email;
 }
-var inputFname = $(this).find("input#fullname").val();
-var inputFrequency = $("#cleaning-frequency").find(":selected").text();
-var inputLocation = $("#location").find(":selected").text();
-var inputphone = $("input#phonenumber").val();
-var inputEmail = $("input#email").val();
+
+
 
 
 $("form#carwash").submit(function(event) {
     event.preventDefault();
+    var inputFname = $("input#fullname").val();
+    var inputFrequency = $("#cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#location").find(":selected").text();
+    var inputphone = $("input#phonenumber").val();
+    var inputEmail = $("input#email").val();
     var inputCarModal = $("#car-modal").find(":selected").text();
-    // console.log(inputCarModal);
+    $("#request").show();
+    $(".fullName").text(inputFname);
+    $(".location-request").text(inputLocation);
+    $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("Car Wash");
+    $(".modal-request").text(inputCarModal);
+
+
+    console.log(inputCarModal);
 });
 
 $("form#houseform").submit(function(event) {
     event.preventDefault();
     var inputHouseRoom = $("#rooms").find(":selected").text();
+    $("#request").show();
+    // $(".fullname").text(inputFname);
+    // $(".location-request").text(inputLocation);
+    // $(".frequency-request").text(inputFrequency);
     console.log(inputHouseRoom);
 });
 $("form#gardenform").submit(function(event) {
     event.preventDefault();
     var inputTypeGarden = $("#type-garden").find(":selected").text();
+    $("#request").show();
+    // $(".fullname").text(inputFname);
+    // $(".location-request").text(inputLocation);
+    // $(".frequency-request").text(inputFrequency);
     console.log(inputTypeGarden);
 });
 $("form#officeform").submit(function(event) {
     event.preventDefault();
     var inputSizeOffice = $("#size-office").find(":selected").text();
-    console.log(inputSizeOffice);
+    // $("#request").show();
+    // $(".fullname").text(inputFname);
+    // $(".location-request").text(inputLocation);
+    // $(".frequency-request").text(inputFrequency);
+    // console.log(inputSizeOffice);
 });
 
 

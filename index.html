@@ -220,12 +220,6 @@
 
         </div>
 
-
-
-
-
-
-
         <div id="carWash" class="modal">
             <span onclick="document.getElementById('carWash').style.display='none'" class="close" title="Close">&times;</span>
             <form class="modal-content" id="carwash">
@@ -302,8 +296,27 @@
 
             </form>
         </div>
-        <div id="request">
+        <div>
+            <div class="modal" id="request" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!--logo-->
+                            <img src="images/logoOne.png" alt="" srcset="">
+                        </div>
+                        <div class="modal-body">
+                            <p>Hi <span class="fullName"></span> Thank you for choosing Cyesha services.</p><br>
+                            <p>We will reach out to you soon.</p>
+                            <p>Did you request <span class="service-request"></span> services at <span class="location-request"></span>?</p>
+                            <p>Which includes:<span class="frequency-request"></span> for <span class="modal-request"></span></p>
 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="houseCleaning" class="modal">
             <span onclick="document.getElementById('houseCleaning').style.display='none'" class="close" title="Close">&times;</span>
