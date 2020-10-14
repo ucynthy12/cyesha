@@ -33,10 +33,12 @@
     background: rgb(189, 39, 144);
     transition: transform 0.5s ease-out;
 }
-.navbar-light .navbar-nav .nav-link:hover::before{
+
+.navbar-light .navbar-nav .nav-link:hover::before {
     transform: scale(1);
     transform-origin: bottom left;
 }
+
 #phone .nav-link {
     color: #fff;
 }
@@ -102,51 +104,43 @@
     font-weight: bold;
 }
 
-/*Section3 DJ*/
 
-#services {}
 
-/*Section4 NC*/
 
-#about {}
-
-/*Section5 DJ*/
-
-#feed_back {}
-
-/*Section6 NC*/
-
-#contact_us {}
-.cont-2{
+.cont-2 {
     background-color: rgb(26, 32, 39);
     color: rgba(248, 245, 245, 0.753);
     font-size: 90%;
 }
-#copy{
-    position: relative; 
+
+#copy {
+    position: relative;
     align-items: center;
     padding-left: 450px;
     padding-top: 40px;
     padding-bottom: 30px;
     justify-items: center;
-
 }
-.cont-1{
+
+.cont-1 {
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: rgb(15, 22, 31);
     color: rgba(248, 245, 245, 0.753);
-    font-size: 90%;  
+    font-size: 90%;
 }
-#call{
+
+#call {
     padding-left: 110px;
     padding-right: 110px;
 }
-.cont-3{
+
+.cont-3 {
     padding-bottom: 60px;
     padding-top: 60px;
 }
-#gocl{
+
+#gocl {
     position: relative;
     display: inline-block;
     padding: 10px;
@@ -157,36 +151,118 @@
     font-size: 24px;
     overflow: hidden;
     transition: 0.2s;
-    
-  }
-  #gocl:hover{
+}
+
+#gocl:hover {
     color: #845b25;
     background: rgb(0, 255, 149);
-    box-shadow: 0 0 10px  rgb(0, 255, 128), 0 0 40px  rgb(0, 255, 128), 0 0 80px  rgb(0, 255, 128);
-  }
-  .social{
-     position: relative; 
-     align-items: center;
-     padding-left: 460px;
-     justify-items: center;
-     
-     }
-     .social:hover{
-        filter: invert(1) sepia(0) saturate(0) hue-rotate(175deg);
-     }
-  .cont-service a{
+    box-shadow: 0 0 10px rgb(0, 255, 128), 0 0 40px rgb(0, 255, 128), 0 0 80px rgb(0, 255, 128);
+}
+
+.social {
+    position: relative;
+    align-items: center;
+    padding-left: 460px;
+    justify-items: center;
+}
+
+.social:hover {
+    filter: invert(1) sepia(0) saturate(0) hue-rotate(175deg);
+}
+
+.cont-service a {
     color: rgb(3, 189, 102);
     text-decoration: none;
     font-size: 120%;
-  }
-  .cont-service a:hover {
-    color:  rgb(161, 240, 236);
-  }
-  
- .cont-service a:active {
+}
+
+.cont-service a:hover {
+    color: rgb(161, 240, 236);
+}
+
+.cont-service a:active {
     color: turquoise;
-  }
-  
-  .cont-service a:visited {
+}
+
+.cont-service a:visited {
     background-color: #ccc;
-  }
+}
+
+button {
+    background-color: #47d147;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 260px;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+    color: #000000;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+.card {
+    margin: 0px 20px 0px 20px;
+}
