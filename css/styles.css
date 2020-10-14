@@ -55,7 +55,37 @@
     height: 100vh;
 }
 
-/*Section2 NC*/
+#about {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin: 50px;
+    bottom: 40px;
+    left: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#H1 {
+    font-size: large;
+    text-decoration: underline;
+    text-decoration: #115511;
+}
+
+#H2 {
+    text-align: center;
+}
+
+#img {
+    width: 80%;
+    float: left;
+    width: 40%;
+    padding: 5px;
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .carousel-item {
     height: 100vh;
