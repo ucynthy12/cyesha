@@ -1,4 +1,41 @@
 //business logic
+function CyeshaInfo(fullname, frequency, location, email, phonenumber) {
+    this.fullname = fullname;
+    this.frequency = frequency;
+    this.location = location;
+    this.phonenumber = phonenumber;
+    this.email = email;
+}
+var inputFname = $(this).find("input#fullname").val();
+var inputFrequency = $("#cleaning-frequency").find(":selected").text();
+var inputLocation = $("#location").find(":selected").text();
+var inputphone = $("input#phonenumber").val();
+var inputEmail = $("input#email").val();
+
+
+$("form#carwash").submit(function(event) {
+    event.preventDefault();
+    var inputCarModal = $("#car-modal").find(":selected").text();
+    // console.log(inputCarModal);
+});
+
+$("form#houseform").submit(function(event) {
+    event.preventDefault();
+    var inputHouseRoom = $("#rooms").find(":selected").text();
+    console.log(inputHouseRoom);
+});
+$("form#gardenform").submit(function(event) {
+    event.preventDefault();
+    var inputTypeGarden = $("#type-garden").find(":selected").text();
+    console.log(inputTypeGarden);
+});
+$("form#officeform").submit(function(event) {
+    event.preventDefault();
+    var inputSizeOffice = $("#size-office").find(":selected").text();
+    console.log(inputSizeOffice);
+});
+
+
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
         email

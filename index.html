@@ -228,7 +228,7 @@
 
         <div id="carWash" class="modal">
             <span onclick="document.getElementById('carWash').style.display='none'" class="close" title="Close">&times;</span>
-            <form class="modal-content">
+            <form class="modal-content" id="carwash">
                 <div class="container">
                     <h2>Car Wash request Field</h2>
                     <div class="row">
@@ -245,7 +245,6 @@
                                         modal-</option>
                                     <option>Ford</option>
                                     <option>Ferrari</option>
-                                    <option>Hyndai</option>
                                     <option>Jeep</option>
                                     <option>Lamborghini</option>
                                     <option>BMW</option>
@@ -300,24 +299,23 @@
                         <button type="submit" class="signupbtn">Sign Up</button>
                     </div>
                 </div>
+
             </form>
         </div>
+        <div id="request">
 
+        </div>
         <div id="houseCleaning" class="modal">
             <span onclick="document.getElementById('houseCleaning').style.display='none'" class="close" title="Close">&times;</span>
-            <form class="modal-content">
+            <form class="modal-content" id="houseform">
                 <div class="container">
                     <h2>House Cleaning Form</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!-- <label for="fullname">Full Names</label> -->
                                 <input type="text" class="form-control" id="full-name-house" placeholder="Enter your full name">
                             </div>
-
                             <div class="form-group">
-                                <!-- <label for="house-cleaning">Rooms you would like us to
-                                    clean</label> -->
                                 <select class="form-control" id="rooms">
                                     <option value="clear" disabled selected hidden>
                                         -select rooms-
@@ -329,8 +327,6 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <!-- <label for="cleaning-frequency">Cleaning
-                                    Frequency</label> -->
                                 <select class="form-control" id="house-cleaning-frequency">
                                     <option value="clear" disabled selected hidden>
                                         -select cleaning
@@ -378,7 +374,7 @@
 
         <div id="gardenMntn" class="modal">
             <span onclick="document.getElementById('gardenMntn').style.display='none'" class="close" title="Close">&times;</span>
-            <form class="modal-content">
+            <form class="modal-content" id="gardenform">
                 <div class="container">
                     <h2>Garden Maintainance Form</h2>
                     <div class="row">
@@ -450,7 +446,7 @@
 
         <div id="officeCleaning" class="modal">
             <span onclick="document.getElementById('officeCleaning').style.display='none'" class="close" title="Close">&times;</span>
-            <form class="modal-content">
+            <form class="modal-content" id="officeform">
                 <div class="container">
                     <h2>Office services Form</h2>
                     <div class="row">
