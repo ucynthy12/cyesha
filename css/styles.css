@@ -661,3 +661,12 @@ textarea#messageTxt {
     border-radius: 30px;
 
 }
+#slider .carousel-indicators li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #2eb82e ;
+}
+#carouselExampleIndicators .carousel-indicators li{
+    background-color:  #2eb82e;
+}
