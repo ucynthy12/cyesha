@@ -106,38 +106,48 @@ $("#close").click(function() {
 $("form#gardenform").submit(function(event) {
     event.preventDefault();
     var inputTypeGarden = $("#type-garden").find(":selected").text();
-    // var inputFname = $("input#fullname").val();
-    // var inputFrequency = $("#cleaning-frequency").find(":selected").text();
-    // var inputLocation = $("#location").find(":selected").text()
-    $("#request").show();
-    $("#gardenMntn").hide();
-    $(".fullname").text(inputFname);
+    var inputFname = $("input#full-name-garden").val();
+    var inputFrequency = $("#garden-cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#garden-clean-location").find(":selected").text()
+    $("#request").show(function() {
+        $("#gardenMntn").hide();
+    });
+    $(".fullName").text(inputFname);
     $(".location-request").text(inputLocation);
     $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("Garden cleaning");
+    $(".modal-request").text(inputTypeGarden);;
 
-});
-$("#close").click(function() {
-    $("#request").hide();
 });
 
 $("form#houseform").submit(function(event) {
     event.preventDefault();
     var inputHouseRoom = $("#rooms").find(":selected").text();
-    $("#request").show();
-    $("#houseCleaning").hide();
-    // $(".fullname").text(inputFname);
-    // $(".location-request").text(inputLocation);
-    // $(".frequency-request").text(inputFrequency);
-    console.log(inputHouseRoom);
+    var inputFname = $("input#full-name-house").val();
+    var inputFrequency = $("#house-cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#house-clean-location").find(":selected").text();
+    $("#request").show(function() {
+        $("#houseCleaning").hide();
+    });
+    $(".fullName").text(inputFname);
+    $(".location-request").text(inputLocation);
+    $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("House cleaning");
+    $(".modal-request").text(inputHouseRoom);
 });
 
 $("form#officeform").submit(function(event) {
     event.preventDefault();
     var inputSizeOffice = $("#size-office").find(":selected").text();
-    $("#request").show();
-    $("#officeCleaning").hide();
-    // $(".fullname").text(inputFname);
-    // $(".location-request").text(inputLocation);
-    // $(".frequency-request").text(inputFrequency);
-    // console.log(inputSizeOffice);
+    var inputFname = $("input#full-name-office").val();
+    var inputFrequency = $("#office-cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#office-clean-location").find(":selected").text();
+    $("#request").show(function() {
+        $("#officeCleaning").hide();
+    });
+    $(".fullName").text(inputFname);
+    $(".location-request").text(inputLocation);
+    $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("Office clean");
+    $(".modal-request").text(inputSizeOffice);
 });

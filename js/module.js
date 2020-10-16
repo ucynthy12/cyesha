@@ -3,13 +3,6 @@ const cyesha_db = (dbname, table) => {
         const db = new Dexie(dbname);
         db.version(1).stores(table);
         db.open();
-
-
-
-        // const db = new Dexie('myDb');
-        // db.version(1).stores({
-        //     friends: `name, age`
-        // });
         return db;
     }
     //insert function
