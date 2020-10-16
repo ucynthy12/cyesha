@@ -98,7 +98,7 @@
                                 User-friendly.Simple.Awesome.</p>
                             <h3 class="animate__animated animate__bounceInLeft animate__delay-3s">
                                 ESTIMATE TOTAL COSTS OF SERVICE</h3>
-                            <a href="#" class="animate__animated animate__fadeIn animate__delay-4s"><button>Service
+                            <a href="#" class="animate__animated animate__fadeIn animate__delay-4s"><button id="estimate">Service
                                         Costs</button></a>
                         </div>
                         <div class="overlay"></div>
@@ -112,7 +112,7 @@
                             <p class="animate__animated animate__fadeIn animate__delay-2s">
                                 Reliable and Stable crews</p>
                             <h3 class="animate__animated animate__fadeIn animate__delay-3s">OUR TEAM IS OUR MOST VALUABLE RESOURCE</h3>
-                            <a href="#" class="animate__animated animate__fadeIn animate__delay-4s"><button>Service
+                            <a href="#" class="animate__animated animate__fadeIn animate__delay-4s"><button id="estimate1">Service
                                         Costs</button></a>
                         </div>
                         <div class="overlay"></div>
@@ -125,7 +125,7 @@
                                 Our focus is to really listen to our clients.</p>
                             <h3 class="animate__animated animate__bounceInRight animate__delay-3s ">
                                 continuous pursuit for perfection </h3>
-                            <a href="#" class="animate__animated animate__fadeIn animate__delay-4s "><button>Service
+                            <a href="#" class="animate__animated animate__fadeIn animate__delay-4s "><button id="estimate2">Service
                                         Costs</button></a>
                         </div>
                         <div class="overlay"></div>
@@ -142,7 +142,116 @@
             </div>
         </div>
     </section>
+
     <!--End of Section 2-->
+    <div>
+        <div class="modal" id="servicepop" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--logo-->
+                        <img src="images/lastChoice.png" alt="" srcset="">
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr style="font-family: 'Grenze Gotisch', cursive; color:green;">
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Estimate cost per hour</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Car wash</td>
+                                    <td>Weekly</td>
+                                    <td>FRW 50,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Bi-weekly</td>
+                                    <td>FRW 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Tri-weekly</td>
+                                    <td>FRW 100,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Monthly</td>
+                                    <td>FRW 150,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Gardening</td>
+                                    <td>Weekly</td>
+                                    <td>FRW 50,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>bi-Weekly</td>
+                                    <td>FRW 60,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>tri-Weekly</td>
+                                    <td>FRW 80,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>monthly</td>
+                                    <td>FRW 100,000</td>
+                                </tr>
+                                <tr>
+                                    <td>House Cleaning</td>
+                                    <td>Weekly</td>
+                                    <td>FRW 30,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>bi-Weekly</td>
+                                    <td>FRW 50,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>tri-Weekly</td>
+                                    <td>FRW 60,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>monthly</td>
+                                    <td>FRW 80,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Office cleaning</td>
+                                    <td>Weekly</td>
+                                    <td>FRW 50,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>bi-Weekly</td>
+                                    <td>FRW 70,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>tri-Weekly</td>
+                                    <td>FRW 90,000</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>monthly</td>
+                                    <td>FRW 120,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Section 3-->
     <section id="services">
 
@@ -305,7 +414,7 @@
         </div>
         <div>
             <div class="modal" id="request" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content" id="content-modal">
                         <div class="modal-header">
                             <!--logo-->
@@ -323,7 +432,7 @@
                             <p>Your location: <strong><span class="location-request"></span></strong></p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" id="closebtn" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>

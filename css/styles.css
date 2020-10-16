@@ -699,3 +699,8 @@
     .modal-body ol {
         list-style: none;
     }
+    
+    #servicepop .modal-dialog-centered {
+        /* width: 700px; */
+        background: #fff;
+    }

@@ -100,7 +100,7 @@ $("form#carwash").submit(function(event) {
 
 
 });
-$("#close").click(function() {
+$("#closebtn").click(function() {
     $("#request").hide();
 });
 $("form#gardenform").submit(function(event) {
@@ -150,4 +150,16 @@ $("form#officeform").submit(function(event) {
     $(".frequency-request").text(inputFrequency);
     $(".service-request").text("Office clean");
     $(".modal-request").text(inputSizeOffice);
+});
+$("#estimate").click(function() {
+    $("#servicepop").show();
+});
+$("#estimate1").click(function() {
+    $("#servicepop").show();
+});
+$("#estimate2").click(function() {
+    $("#servicepop").show();
+});
+$("#close").click(function() {
+    $("#servicepop").hide();
 });
