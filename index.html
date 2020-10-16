@@ -265,15 +265,14 @@
 
 
 
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="slider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators" id='card-indicators'>
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                </li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" id="slide1">
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-4">
@@ -304,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="slide2">
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-4">
@@ -335,7 +334,8 @@
                     </div>
                 </div>
             </div>
-
+            <a href="left carousel-control" href="#slider" data-slide="prev" role='button'><span class="icon-prev"></span></a>
+            <a href="right carousel-control" href="#slider" data-slide="next" role='button'><span class="icon-next"></span></a>
         </div>
 
         <div id="carWash" class="modal">
