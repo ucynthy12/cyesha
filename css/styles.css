@@ -696,7 +696,58 @@ textarea#messageTxt {
 #carouselExampleIndicators .carousel-indicators li {
     background-color: #2eb82e;
 }
+#fb {
+    width: 500px;
+    height: 380px;
+    padding: 30px 2opx;
+    background: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    box-shadow: 0 0 20px black;
+}
 
+.name {
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#answer {
+    font-weight: bold;
+}
+
+
+#dismiss-popup-btn {
+    padding: 10px;
+    font-size: 12px;
+}
+
+#request #content-modal {
+    width: 800px;
+    height: 500px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+    box-shadow: 0 0 20px black;
+}
+
+.fullName {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.modal-body ol {
+    list-style: none;
+}
+
+#servicepop .modal-dialog-centered {
+    /* width: 700px; */
+    background: #fff;
+}
 /* 
 @media screen and (max-width: 360px) {
 

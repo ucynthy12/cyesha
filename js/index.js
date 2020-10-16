@@ -3,12 +3,26 @@ $('button.btn-learn').click(function () {
     $('button.btn-learn').hide();
 });
 //business logic
+// import cyesha_db, {
+//     bulkcreate
+// } from './module.js';
+// import Cyesha_db from './module.js';
+// let db = cyesha_db("CyeshaDb", {
+//     carwash: `fullname, carmodal, frequency,location,phonenumber, email`
+// });
+
 function CyeshaInfo(fullname, frequency, location, email, phonenumber) {
     this.fullname = fullname;
     this.frequency = frequency;
     this.location = location;
     this.phonenumber = phonenumber;
     this.email = email;
+}
+
+function ResetFieldFB() {
+    $("input#nameTxt").val("");
+    $("input#mailTxt").val("");
+    $("textarea#messageTxt").val("");
 }
 
 function isEmail(email) {
@@ -40,17 +54,24 @@ $("form#myForm").submit(function(event) {
     var msg = $("textarea#messageTxt").val();
 
     if (name != "" && email != "" && msg != "") {
-        alert(
-            name +
-            ", We have recieved your feedback. Thank you for your support and reach to us, it means a lot"
-        );
+        // alert(
+        //     name +
+        //     ", We have recieved your feedback. Thank you for your support and reach to us, it means a lot"
+        // );
+        $("#fbmsg").show();
+        $(".name").text(name);
     } else if (!isEmail(email)) {
         alert("incomplete, try again please");
     } else {
         alert("invalid input");
     }
+    ResetFieldFB();
     event.preventDefault();
 });
+$("#dismiss-popup-btn").click(function() {
+    $("#fbmsg").hide();
+});
+
 $("form#carwash").submit(function(event) {
     event.preventDefault();
     var inputFname = $("input#fullname").val();
@@ -59,41 +80,90 @@ $("form#carwash").submit(function(event) {
     var inputphone = $("input#phonenumber").val();
     var inputEmail = $("input#email").val();
     var inputCarModal = $("#car-modal").find(":selected").text();
-    $("#request").show();
+    $("#request").show(function() {
+        $("#carWash").hide();
+    });
     $(".fullName").text(inputFname);
     $(".location-request").text(inputLocation);
     $(".frequency-request").text(inputFrequency);
     $(".service-request").text("Car Wash");
     $(".modal-request").text(inputCarModal);
 
+    // $("#dbcar").click(function() {
+    //     let flag = bulkcreate(db.carwash, {
+    //         fullname: inputFname.value,
+    //         carmodal: inputCarModal.value,
+    //         frequency: inputFrequency.value,
+    //         location: inputLocation.value,
+    //         phonenumber: inputphone.value,
+    //         email: inputEmail.value
 
-    console.log(inputCarModal);
+    //     })
+    //     console.log(flag);
+    // });
+
+
+});
+$("#closebtn").click(function() {
+    $("#request").hide();
+});
+$("form#gardenform").submit(function(event) {
+    event.preventDefault();
+    var inputTypeGarden = $("#type-garden").find(":selected").text();
+    var inputFname = $("input#full-name-garden").val();
+    var inputFrequency = $("#garden-cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#garden-clean-location").find(":selected").text()
+    $("#request").show(function() {
+        $("#gardenMntn").hide();
+    });
+    $(".fullName").text(inputFname);
+    $(".location-request").text(inputLocation);
+    $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("Garden cleaning");
+    $(".modal-request").text(inputTypeGarden);;
+
 });
 
 $("form#houseform").submit(function(event) {
     event.preventDefault();
     var inputHouseRoom = $("#rooms").find(":selected").text();
-    $("#request").show();
-    // $(".fullname").text(inputFname);
-    // $(".location-request").text(inputLocation);
-    // $(".frequency-request").text(inputFrequency);
-    console.log(inputHouseRoom);
+    var inputFname = $("input#full-name-house").val();
+    var inputFrequency = $("#house-cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#house-clean-location").find(":selected").text();
+    $("#request").show(function() {
+        $("#houseCleaning").hide();
+    });
+    $(".fullName").text(inputFname);
+    $(".location-request").text(inputLocation);
+    $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("House cleaning");
+    $(".modal-request").text(inputHouseRoom);
 });
-$("form#gardenform").submit(function(event) {
-    event.preventDefault();
-    var inputTypeGarden = $("#type-garden").find(":selected").text();
-    $("#request").show();
-    // $(".fullname").text(inputFname);
-    // $(".location-request").text(inputLocation);
-    // $(".frequency-request").text(inputFrequency);
-    console.log(inputTypeGarden);
-});
+
 $("form#officeform").submit(function(event) {
     event.preventDefault();
     var inputSizeOffice = $("#size-office").find(":selected").text();
-    // $("#request").show();
-    // $(".fullname").text(inputFname);
-    // $(".location-request").text(inputLocation);
-    // $(".frequency-request").text(inputFrequency);
-    // console.log(inputSizeOffice);
+    var inputFname = $("input#full-name-office").val();
+    var inputFrequency = $("#office-cleaning-frequency").find(":selected").text();
+    var inputLocation = $("#office-clean-location").find(":selected").text();
+    $("#request").show(function() {
+        $("#officeCleaning").hide();
+    });
+    $(".fullName").text(inputFname);
+    $(".location-request").text(inputLocation);
+    $(".frequency-request").text(inputFrequency);
+    $(".service-request").text("Office clean");
+    $(".modal-request").text(inputSizeOffice);
+});
+$("#estimate").click(function() {
+    $("#servicepop").show();
+});
+$("#estimate1").click(function() {
+    $("#servicepop").show();
+});
+$("#estimate2").click(function() {
+    $("#servicepop").show();
+});
+$("#close").click(function() {
+    $("#servicepop").hide();
 });
